@@ -1,0 +1,186 @@
+.mainPageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPageImg {
+    margin: 30px 0 30px 0;
+}
+
+.newEpisodesSection {
+    --content-wrapper-padding-inline: 2.5rem;
+    --content-wrapper-padding-inline: 1.25rem;
+    --content-width: 65.625rem;
+    max-width: calc(var(--content-width) + var(--content-wrapper-padding-inline)*2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-right: 2.5rem;
+    margin-top: 60px;
+}
+
+.dividerOrange{
+    background-image: linear-gradient(to left,#fab818,#ef4323);
+    height: 4px;
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+.dividerGray{
+    background-image: linear-gradient(to left,#213944,#2abdbb);
+    height: 2px;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.sectionHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.moreEpisodesTitle{
+    font-family: 'Crunchyroll';
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.playButton{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(30deg) brightness(104%) contrast(108%);
+    padding-right: 10px;
+}
+
+.calendarTitle {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+    text-align: end;
+    color: #a0a0a0;
+    font-weight: 900;
+    font-size: .875rem;
+}
+
+.arrow{
+    filter: invert(67%) sepia(1%) saturate(20%) hue-rotate(318deg) brightness(96%) contrast(89%);
+    transform: rotate(180deg);
+    width: 12px;
+    height: 12px;
+}
+
+.moreEpisodesSubtitle{
+    font-size: 1.375rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.seeMoreEpisodesButton{
+    width: 100%;
+    border-radius: 0;
+    background-color: #213944;
+    font-size: .875rem;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.seeMoreEpisodesButton:hover{
+    width: 100%;
+    border-radius: 0;
+    background-color: #2f5161;
+}
+
+.newEpisodesGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.newsSection{
+    margin-top: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('../../assets/newsBg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.newsContainer{
+    --content-wrapper-padding-inline: 2.5rem;
+    --content-wrapper-padding-inline: 1.25rem;
+    --content-width: 65.625rem;
+    max-width: calc(var(--content-width) + var(--content-wrapper-padding-inline)*2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.newsDivider{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.newsSectionTitle{
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.newsLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsCardLeft{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+}
+
+.newsLeftImg{
+    height: 200px;
+}
+
+.newsCardLeftText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: start;
+}
+
+.newsCardLeftTitle{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.newsCardLeftTime{
+    font-size: .75rem;
+    font-weight: 600;
+    color: #a0a0a0;
+    margin-bottom: 0.25rem;
+}
+
+.imgWrapper{
+    max-width: 240px;
+    max-height: 135px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}

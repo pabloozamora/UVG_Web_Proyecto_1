@@ -1,0 +1,115 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.mainCarrouselContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.backgroundContainer{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.blueBg{
+    position: absolute;
+    max-width: 100%;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.blueBgHidden{
+    position: absolute;
+    max-width: 100%;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+
+.orangeBg{
+    max-width: 100%;
+}
+
+.displayContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.displayImg{
+    height: 92%;
+    opacity: 1;
+    transition: left 0.5s ease-out;
+}
+
+.swipePrevImage{
+    left: -1000px !important;
+    height: 92%;
+    opacity: 1;
+    transition: left 0.5s ease-out;
+    position: absolute;
+}
+
+.swipeNextImage{
+    right: -1000px !important;
+    height: 92%;
+    opacity: 1;
+    transition: left 0.5s ease-out;
+    position: absolute;
+}
+
+
+.carrouselArrowContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.carrouselArrowContainerHidden{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    visibility: hidden;
+}
+
+.carrouselArrowContainer:hover{
+    background-color: #23252b;
+}
+
+.carrouselArrowLeft{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.carrouselArrowLeft:hover{
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(0%) hue-rotate(152deg) brightness(101%) contrast(103%);
+}
+
+.carrouselArrowRight{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    rotate: 180deg;
+}
+
+.carrouselArrowRight:hover{
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(0%) hue-rotate(152deg) brightness(101%) contrast(103%);
+}
+

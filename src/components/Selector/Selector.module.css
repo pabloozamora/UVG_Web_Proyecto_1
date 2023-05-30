@@ -1,0 +1,68 @@
+
+.selectorMainContainer{
+    --content-wrapper-padding-inline: 2.5rem;
+    --content-wrapper-padding-inline: 1.25rem;
+    --content-width: 65.625rem;
+    max-width: calc(var(--content-width) + var(--content-wrapper-padding-inline)*2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-right: 2.5rem;
+    margin-top: 60px;
+}
+
+.dividerGray{
+    background-image: linear-gradient(to left,#213944,#2abdbb);
+    height: 4px;
+    width: 96.35%;
+    margin: 0 40px 0 40px;
+}
+
+.cardsContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 25px 0 25px;
+}
+
+.dividerOrange{
+    background-image: linear-gradient(to left,#fab818,#ef4323);
+    height: 4px;
+    width: 96.35%;
+    margin: 0 40px 0 40px;
+}
+
+.title{
+    font-size: 1.75rem;
+    font-family: 'Crunchyroll';
+    color: #fff;
+    margin: 0 40px 0 40px;
+    word-wrap: break-word;
+}
+
+.subtitle{
+    color: #dadada;
+    margin: 0 40px 15px 40px;
+}
+
+.carrouselArrowContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    transition: background-color 0.2s;
+    transform: translateX(-14px) translateY(-40px);
+}
+
+.carrouselArrowContainer:hover{
+    background-color: #23252b;
+}
+
+.carrouselArrowRight{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    rotate: 180deg;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(0%) hue-rotate(152deg) brightness(101%) contrast(103%);
+}

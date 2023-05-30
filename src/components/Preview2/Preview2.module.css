@@ -1,0 +1,102 @@
+.preview2Container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.background{
+    max-width: 100%;
+}
+
+.mainContainer{
+    position: absolute;
+    --content-wrapper-padding-inline: 2.5rem;
+    --content-wrapper-padding-inline: 1.25rem;
+    --content-width: 65.625rem;
+    max-width: calc(var(--content-width) + var(--content-wrapper-padding-inline)*2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #000;
+    bottom: -10px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0 20px 0 5px;
+}
+
+.previewImage{
+    max-width: 190px;
+    transform: translate(-18px, -15px);
+}
+
+.imgFigure{
+    transform: translate(-18px, -15px);
+}
+
+.previewDescription{
+    text-align: start;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.title{
+    color: #fff;
+    font-family: 'Crunchyroll';
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.subtitle{
+    color: #a0a0a0;
+    font-family: 'Lato';
+    font-size: .875rem;
+}
+
+.buttonsContainer{
+    display: flex;
+    align-items: center;
+}
+
+.button1{
+    background-color: #f47521;
+    color: #141519;
+    min-width: 7.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0;
+    font-weight: 600;
+    margin: 6px 5px 6px 5px;
+    display: inline-flex;
+}
+
+.playButton{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.button2{
+    background-color: #000;
+    color: #f47521;
+    min-width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 0;
+    font-weight: 600;
+    margin: 6px 5px 6px 5px;
+    display: inline-flex;
+    border-style: solid;
+    border-color: #f47521;
+    border-width: 3px;
+}

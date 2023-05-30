@@ -1,0 +1,33 @@
+.buttonsContainer{
+    display: grid;
+    margin-top: 20px;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 0.75rem;
+    grid-auto-columns: minmax(auto,10.25rem);
+}
+
+.carrouselButton{
+    padding: 0.6875rem 0.5rem;
+    color: #fff;
+    padding: 0.6875rem 0.5rem;
+    background-color: #23252b;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    max-height: 2rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 0.75rem;
+    transition: background-color 0.2s;
+}
+
+.carrouselButton:hover{
+    padding: 0.6875rem 0.5rem;
+    color: #fff;
+    padding: 0.6875rem 0.5rem;
+    background-color: #2f5160;
+}
+

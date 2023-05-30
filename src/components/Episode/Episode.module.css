@@ -1,0 +1,43 @@
+.episodeContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.epImage {
+    max-width: 145.78px;
+    max-height: 82px;
+}
+
+.textContainer{
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: .875rem;
+    text-align: start;
+}
+
+.title{
+    
+    font-weight: 600;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.subtitle{
+    color: #a0a0a0;
+}
+
+.footer{
+    color: #a0a0a0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.time{
+    margin-left: auto;
+}
