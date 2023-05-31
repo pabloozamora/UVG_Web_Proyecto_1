@@ -56,6 +56,11 @@
     font-family: 'Crunchyroll';
     font-weight: 500;
     font-size: 1.75rem;
+    cursor: pointer;
+}
+
+.title:hover{
+    text-decoration: underline;
 }
 
 .subtitle{

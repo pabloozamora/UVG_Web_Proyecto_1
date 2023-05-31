@@ -7,19 +7,19 @@ const MainCarrouselButtons = () => (
       Demon Slayer Swordsmith Village Arc
     </div>
     <div className={styles.carrouselButton}>
-      The Aristocrat&apos;s Otherworldy Adventure
+      Skip and Loafer Nuevo Episodio
     </div>
     <div className={styles.carrouselButton}>
-      My Love Story with Yamada-kun at Lv999
+      Vinland Saga Season 2 Nuevo Episodio
     </div>
     <div className={styles.carrouselButton}>
       Mobile Suit Gundam: The Witch from Mercury
     </div>
     <div className={styles.carrouselButton}>
-      A Galaxy Next Door Nuevo Episodio
+      In Another World With My Smartphone T2
     </div>
     <div className={styles.carrouselButton}>
-      One Piece
+      Bungo Stray Dogs T4 Todos Los Episodios
     </div>
   </div>
 )

@@ -7,45 +7,31 @@ import carrouselArrow from '../../assets/carrouselArrow.svg'
 const MainCarrousel = () => {
   const [currentBackground, setCurrentBackGround] = useState(orangeBg)
   const [currentDisplay, setCurrentDisplay] = useState(0)
-  const [nextDisplay, setNextDisplay] = useState(1)
-  const [imageStyles, setImageStyles] = useState({})
   const displayImages = ['https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/3ea22dd4-58dc-4ebf-a182-6634fd4b3453.webp',
-    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/435a0180-9631-4055-93ad-08573dbe1462.webp',
-    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/cbc60dcc-9f32-4fc1-824b-999e52e7aa52.webp',
+    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/50ba7056-7db4-4d7b-a2ad-1c8eca5d5dc8.webp',
+    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/01ed6dcf-2d2e-402f-b134-d6218eabce06.webp',
     'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/2cfc0c0a-71cc-4fed-9f51-9a34b2496b3b.webp',
-    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/5fb61e16-7e8d-472e-956d-bfceb2b149ba.webp',
-    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/50598936-54f0-4b16-ac6d-9c746bbe3dc0.webp']
+    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/8047572c-9831-4ce2-b164-a318e53c2fb0.webp',
+    'https://static.crunchyroll.com/fms/landscape_poster/960x540/100/png/724b5da6-3181-4d9f-97f8-6cf2aaa87c22.webp']
 
   const changeImage = () => {
-    // console.log(imageStyles)
-    // setImageStyles((oldStyles) => ({ ...oldStyles, [`image${currentDisplay}`]: styles.swipePrevImage }))
-    if (currentBackground === blueBg) {
+    if (currentDisplay === 1 || currentDisplay === 3 || currentDisplay === 5) {
       setCurrentBackGround(orangeBg)
     } else setCurrentBackGround(blueBg)
 
-    /* const currentIndex = currentDisplay
+    const currentIndex = currentDisplay
     if (currentIndex === 5) {
-      setImageStyles((oldStyles) => ({ ...oldStyles, image5: styles.swipePrevImage }))
       setCurrentDisplay(0)
-      setNextDisplay(1)
-      setImageStyles((oldStyles) => ({ ...oldStyles, image0: '' }))
-      setImageStyles((oldStyles) => ({ ...oldStyles, image1: styles.swipeNextImage }))
     } else {
       setCurrentDisplay((oldDisplay) => (oldDisplay + 1))
-      setImageStyles((oldStyles) => ({ ...oldStyles, [`image${currentDisplay}`]: styles.swipePrevImage }))
-      setImageStyles((oldStyles) => ({ ...oldStyles, [`image${currentDisplay + 1}`]: '' }))
-      if (currentIndex === 4) {
-        setNextDisplay(0)
-        setImageStyles((oldStyles) => ({ ...oldStyles, image0: styles.swipeNextImage }))
-      }
-    } */
+    }
   }
 
   useEffect(() => {
     setTimeout(() => {
       changeImage()
     }, 4000)
-  }, [])
+  }, [currentDisplay])
 
   return (
     <div className={styles.mainCarrouselContainer}>
@@ -64,9 +50,12 @@ const MainCarrousel = () => {
           <img className={styles.carrouselArrowLeft} alt="arrow" src={carrouselArrow} />
         </div>
         )}
-        {(currentDisplay === 0 || nextDisplay === 0) && (
-        <img className={styles.displayImg} alt="image0" src={displayImages[0]} />
-        )}
+        <img className={currentDisplay === 0 ? styles.onDisplay : styles.notOnDisplay} alt="image0" src={displayImages[0]} />
+        <img className={currentDisplay === 1 ? styles.onDisplay : styles.notOnDisplay} alt="image1" src={displayImages[1]} />
+        <img className={currentDisplay === 2 ? styles.onDisplay : styles.notOnDisplay} alt="image2" src={displayImages[2]} />
+        <img className={currentDisplay === 3 ? styles.onDisplay : styles.notOnDisplay} alt="image3" src={displayImages[3]} />
+        <img className={currentDisplay === 4 ? styles.onDisplay : styles.notOnDisplay} alt="image4" src={displayImages[4]} />
+        <img className={currentDisplay === 5 ? styles.onDisplay : styles.notOnDisplay} alt="image5" src={displayImages[5]} />
         {currentDisplay !== 5 && (
         <div className={styles.carrouselArrowContainer}>
           <img className={styles.carrouselArrowRight} alt="arrow" src={carrouselArrow} />

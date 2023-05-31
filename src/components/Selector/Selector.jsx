@@ -10,7 +10,7 @@ const Selector = ({
   <div className={styles.selectorMainContainer}>
     <span className={styles.title}>{title}</span>
     <span className={styles.subtitle}>{subtitle}</span>
-    <div className={color === 'orange' ? styles.dividerOrange : styles.dividerGray} />
+    <div data-testid="divisor" className={color === 'orange' ? styles.dividerOrange : styles.dividerGray} />
     <div className={styles.cardsContainer}>
       {elements.map((card) => <Card title={card.title} subtitle={card.subtitle} src={card.src} />)}
       <div className={styles.carrouselArrowContainer}>

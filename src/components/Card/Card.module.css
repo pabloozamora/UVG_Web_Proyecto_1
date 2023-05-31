@@ -4,6 +4,12 @@
     align-items: flex-start;
     padding: 6px 15px 6px 15px;
     width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cardContainer:hover{
+    background-color: #23252b;
 }
 
 .cardImage {

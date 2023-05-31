@@ -53,6 +53,7 @@
     align-self: center;
     transition: background-color 0.2s;
     transform: translateX(-14px) translateY(-40px);
+    cursor: pointer;
 }
 
 .carrouselArrowContainer:hover{

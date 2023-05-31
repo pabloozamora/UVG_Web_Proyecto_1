@@ -6,6 +6,7 @@
 
 .mainPageImg {
     margin: 30px 0 30px 0;
+    cursor: pointer;
 }
 
 .newEpisodesSection {
@@ -72,6 +73,11 @@
     color: #a0a0a0;
     font-weight: 900;
     font-size: .875rem;
+    cursor: pointer;
+}
+
+.calendarTitle:hover{
+    color: #fff;
 }
 
 .arrow{

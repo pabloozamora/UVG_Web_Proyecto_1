@@ -39,6 +39,11 @@
     font-size: 1.75rem;
     text-align: start;
     line-height: 2.25rem;
+    cursor: pointer;
+}
+
+.title:hover{
+    text-decoration: underline;
 }
 
 .subtitle{
