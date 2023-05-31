@@ -12,7 +12,9 @@ const Preview1 = ({
     <div className={styles.contentContainer}>
       <span className={styles.title}>{title}</span>
       <span className={styles.subtitle}>{subtitle}</span>
-      <p className={styles.previewDescription}>{description}</p>
+      <p className={description ? styles.previewDescription : styles.previewDescriptionInvisible}>
+        {description || 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'}
+      </p>
       <div className={styles.buttonsContainer}>
         <button type="submit" className={styles.button1}>
           <img alt="play" className={styles.playButton} src={playButton} />
@@ -30,8 +32,12 @@ const Preview1 = ({
 Preview1.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   src: PropTypes.string.isRequired,
+}
+
+Preview1.defaultProps = {
+  description: null,
 }
 
 export default Preview1

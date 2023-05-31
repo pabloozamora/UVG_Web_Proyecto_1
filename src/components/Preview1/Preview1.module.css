@@ -37,6 +37,8 @@
     font-family: 'Crunchyroll';
     font-weight: 500;
     font-size: 1.75rem;
+    text-align: start;
+    line-height: 2.25rem;
 }
 
 .subtitle{
@@ -80,4 +82,8 @@
     border-style: solid;
     border-color: #f47521;
     border-width: 3px;
+}
+
+.previewDescriptionInvisible{
+    color:#000
 }
